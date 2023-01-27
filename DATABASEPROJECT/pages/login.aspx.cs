@@ -24,7 +24,7 @@ namespace DATABASEPROJECT.pages
         }
         protected void btnlogin_Click (object sender, EventArgs e)
         {
-            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=LAPTOP-R0JTKVLM\SQLEXPRESS;Initial Catalog=COINDB;Integrated Security=True"))
+            using (SqlConnection sqlCon = new SqlConnection(null))
             {
                 sqlCon.Open();
 
