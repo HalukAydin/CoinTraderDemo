@@ -1,0 +1,581 @@
+﻿* {
+    font-family: sans-serif;
+}
+
+html {
+    width: 100%;
+    overflow:scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height:0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+body {
+    background: url('/images/background.png') right no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+#signupview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 250px;
+}
+.modernSignup {
+    background-color: #12192c;
+    position: relative;
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#logo {
+    color: #ffffff;
+    display: block;
+    align-items: center;
+    flex-direction: row;
+    font-weight: bolder;
+    font-size: larger;
+}
+    #logo:hover{
+        cursor:pointer;
+    }
+    
+
+#imglogo {
+    background-color: transparent;
+    height: 11em;
+    width: 18.75em;
+    display: block;
+    float: left;
+}
+    #imglogo:hover {
+    cursor: pointer;
+    }
+
+#logoname {
+    position: absolute;
+    padding-left: 5em;
+    padding-top: 2em;
+    font-weight: bolder;
+}
+
+.container {
+    width: 40em;
+    float: right;
+    padding-right: 15em;
+    padding-top: 6em;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 5em;
+}
+#formupdate{
+    margin-top:17em;
+    
+}
+#divuser {
+    border-radius: 20px;
+    text-align: right;
+    color: white;
+    padding: 2em;
+    margin-top: 4em;
+    font-size: 18px;
+    letter-spacing: 2px;
+    width: 20em;
+    float: right;
+    background-color: #182137
+}
+
+#btndiv {
+    float: left;
+    margin-top: 17em;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+    #btndiv button {
+        margin-bottom: 1.5em;
+    }
+
+#prjhead {
+    color: #9340ff;
+    padding-left: 2em;
+    font-size: 3em;
+    text-align: center;
+}
+
+.btn-group {
+    padding-left: 6em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 20%;
+    padding-top: 10em;
+}
+
+    .btn-group a {
+        border: 1px solid black;
+        border-radius: 40px;
+        background: linear-gradient(90deg,#9340ff 0%, #ff3c5f 100%);
+        font-size: 1.5em;
+        padding: 20px 20px 0px 20px;
+        font-weight: bolder;
+        float: left;
+        margin-top: 1.5em;
+        height: 2em;
+        width: 8em;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+        .btn-group a:hover {
+            background: #9340ff;
+            border: 1px solid black;
+            border-radius: 40px;
+        }
+
+.coin {
+    height: 50px;
+    width: 50px;
+}
+
+#btnprof {
+    border: 1px solid black;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#9340ff 0%, #ff3c5f 100%);
+    font-size: 1.5em;
+    padding: 20px 20px 0px 20px;
+    font-weight: bolder;
+    float: right;
+    margin-top: 3em;
+    margin-right: 1em;
+    height: 2em;
+    width: 8em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+    #btnprof:hover {
+        background: #9340ff;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+#btnset {
+    border: 1px solid black;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#9340ff 0%, #ff3c5f 100%);
+    font-size: 1.5em;
+    padding: 20px 20px 0px 20px;
+    font-weight: bolder;
+    float: left;
+    margin-top: 1em;
+    margin-right: 1em;
+    height: 2em;
+    width: 8em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+    #btnset:hover {
+        background: #9340ff;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+#btnhome {
+    border: 1px solid black;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#9340ff 0%, #ff3c5f 100%);
+    font-size: 1.5em;
+    padding: 20px 20px 0px 20px;
+    font-weight: bolder;
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+    height: 2em;
+    width: 8em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+    #btnhome:hover {
+    background: #9340ff;
+    border: 1px solid black;
+    border-radius: 40px;
+    }
+
+#btnpass {
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 1.5em;
+    padding: 20px 120px 20px 20px;
+    font-weight: bolder;
+    float: left;
+    margin-right: 1em;
+    height: 3em;
+    text-align: left;
+    text-decoration: none;   
+}
+    #btnpass:hover {
+        border: none;
+        color: white;
+    }
+#btnmail {
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 1.5em;
+    padding: 20px 120px 20px 20px;
+    margin-right: 2em;
+    font-weight: bolder;
+    float: left;
+    margin-right: 1em;
+    height: 3em;
+    text-align: left;
+    text-decoration: none;
+}
+
+    #btnmail:hover {
+        border: none;
+        color: white;
+    }
+#btndelete {
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 1.5em;
+    padding: 20px 120px 20px 20px;
+    margin-right: 2em;
+    font-weight: bolder;
+    float: left;
+    margin-right: 1em;
+    height: 3em;
+    text-align: left;
+    text-decoration: none;
+}
+    #btndelete:hover {
+        border: none;
+        color: white;
+    }
+
+#btnlogout {
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 1.5em;
+    padding: 20px 120px 20px 20px;
+    margin-right: 2em;
+    font-weight: bolder;
+    float: left;
+    margin-right: 1em;
+    height: 3em;
+    text-align: left;
+    text-decoration: none;
+}
+
+    #btnlogout:hover {
+        border: none;
+        color: white;
+    }
+
+#linkset {
+    border: 1px solid black;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#9340ff 0%, #ff3c5f 100%);
+    font-size: 1.5em;
+    padding: 20px 20px 0px 20px;
+    font-weight: bolder;
+    float: left;
+    margin-top: 27em;
+    margin-right: 1em;
+    height: 2em;
+    width: 8em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+    #linkset:hover {
+        background: #9340ff;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+.walletList {
+    margin-left:2.25em;
+    background-color: #182137;
+    float: left;
+    padding: 20px 5px;
+    width: 95%;
+    border-radius: 20px;
+    color: white;
+}
+#DataList1{
+    margin-top: 2em;
+    margin-left: 2.25em;
+    background-color: #182137;
+    float: left;
+    padding: 20px 5px;
+    width: 95%;
+    border-radius: 20px;
+    color: white;
+}
+
+#cointable {
+    margin-top: 2em;
+    margin-left: 2.25em;
+    background-color: #182137;
+    float: left;
+    padding: 20px 5px;
+    width: 95%;
+    border-radius: 20px;
+    color: white;
+}
+    #cointable tbody tr td {
+        padding: 1em;
+        text-align: center;
+        width: 10em;
+    }
+
+        #cointable tbody tr td a {
+            border: 1px solid black;
+            border-radius: 10px;
+            background: white;
+            margin: 5px;
+            padding: 20px 50px;
+            text-align: center;
+            text-decoration: none;
+            color: #182137;
+        }
+
+            #cointable tbody tr td a:hover {
+                background: #182137;
+                color: white;
+                cursor:pointer;
+            }
+.btntrade {
+    border:none;
+    padding:10px 25px;
+    border-radius:20px;
+    background:#182137;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size:40px;
+}
+    .btntrade:hover {
+        background: white;
+        color: #182137;
+        cursor: pointer;
+    }
+
+#proftable {
+    margin-top: 4em;
+    margin-left: 2.25em;
+    float: left;
+    padding: 20px 5px;
+    width: 95%;
+    border-radius: 20px;
+    color: white;
+}
+
+    #proftable tr td {
+        width: 2em;
+        padding: 1em 0;
+    }
+
+.proimg {
+    border: solid 1px transparent;
+    border-radius: 25px;
+    height: 75px;
+    width: 75px;
+}
+.regbtn {
+    border: 1px solid black !important;
+    border-radius: 40px !important;
+    background: linear-gradient(90deg,#9340ff 0%, #ff3c5f 100%) !important;
+    font-size: 1.5em !important;
+    font-weight: bolder !important;
+    float: left !important;
+    height: 2em !important;
+    width: 12em !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+    .regbtn:hover {
+        background: #9340ff !important;
+        border: 1px solid black !important;
+        border-radius: 40px !important;
+    }
+
+.registrationEntryField {
+    color: snow;
+    background-color: transparent;
+    border-style: solid;
+    border-color: wheat;
+}
+#lblFailure{
+    font-size:30px;
+    background-color:#182137;
+    padding:0 1em;
+    border-radius:20px;
+}
+#lblfailure {
+    font-size: xx-large;
+    background-color: #182137;
+    padding: 0 1em;
+    border-radius: 20px;
+    margin-left:1em;
+    text-align:center;
+}
+.centeredRectView {
+    margin: auto;
+    height: 65%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #182137;
+    border-radius:20px;
+    padding-top:0.5em;
+    /* background-color: black; */
+}
+
+#tradePriceViewContainer {
+    background-color: #182137;
+    height: 50%;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tradePriceView {
+    background-color: #182137;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.tradeBuyButton {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    margin-top: 0.5rem;
+    border: 0;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: #fff;
+    
+    background: #9340ff;
+}
+
+.tradeSellButton {
+    background: #b61818 !important;
+}
+
+
+.tradeInputField {
+    border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    width: 100%;
+    height: 2rem;
+    padding: 0 0 0.25rem 0;
+    font-size: 2em !important;
+    color: white;
+    background: transparent;
+    text-align: center;
+    
+}
+
+    .tradeInputField:focus {
+        outline: none;
+    }
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#coins {
+    background-color: #2e323e;
+    outline: none;
+    border-style: none;
+    color: wheat;
+}
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    background-color: transparent;
+}
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        border-bottom-color: #424242;
+        border-bottom-style: solid;
+        /* border-left: solid!important;*/
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        width: 50%;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #424242;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #757575;
+            border-bottom: solid !important;
+            border: none;
+        }
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-top: none;
+}
