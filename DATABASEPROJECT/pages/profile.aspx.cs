@@ -13,7 +13,7 @@ namespace DATABASEPROJECT.pages
     
     public partial class profile : System.Web.UI.Page
     {
-        const string ConnectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=COINDB;Integrated Security=True ";
+        const string ConnectionString = null;
         const string IsSelect = "SELECT * FROM USERS WHERE USERACTIVE='True'";
 
         protected void Page_Load(object sender, EventArgs e)
