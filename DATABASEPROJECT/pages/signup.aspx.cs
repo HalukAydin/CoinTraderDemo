@@ -10,7 +10,7 @@ namespace DATABASEPROJECT.pages
 {
     public partial class register : System.Web.UI.Page
     {
-        const string ConnectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=COINDB;Integrated Security=True ";
+        const string ConnectionString = null;
         const string IsSelect = "SELECT COUNT(*) FROM USERS WHERE USERMAIL = @user_mail";
         DateTime date =DateTime.Today;
         public int rowExist()
@@ -34,7 +34,7 @@ namespace DATABASEPROJECT.pages
             string stmt = "SELECT COUNT(*) FROM USERS";
             int count = 0;
 
-            using (SqlConnection thisConnection = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=COINDB;Integrated Security=True"))
+            using (SqlConnection thisConnection = new SqlConnection(null))
             {
                 using (SqlCommand cmdCount = new SqlCommand(stmt, thisConnection))
                 {
@@ -65,7 +65,7 @@ namespace DATABASEPROJECT.pages
             }
             else
             {
-                SqlConnection conn = new SqlConnection("Data Source=LAPTOP-R0JTKVLM\\SQLEXPRESS;Initial Catalog=COINDB;Integrated Security=True");
+                SqlConnection conn = new SqlConnection(null);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO USERS (USER_ID,USERNAME,USERSURNAME,USERMAIL,USERPASS,USERACTIVE,DATEOFCREATION) Values('" + A() + "','" + field_fname.Text + "','" + field_lname.Text + "','" + field_mail.Text + "','" + field_password.Text + "','False','"+ date +"')", conn);
                 SqlCommand cmd2 = new SqlCommand("INSERT INTO WALLET (USER_ID,COINNAME,COINAMOUNT,BALANCE,COINIMAGE) Values('" + A() + "','USDT',1000000,1000000,'images/USDT.png')", conn);
