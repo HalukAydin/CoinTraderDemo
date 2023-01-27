@@ -10,7 +10,7 @@ namespace dbproj
 {
     public partial class TradePage : System.Web.UI.Page
     {
-        const string ConnectionString = "Data Source=LAPTOP-R0JTKVLM\\SQLEXPRESS;Initial Catalog=COINDB;Integrated Security=True ";
+        const string ConnectionString = null;
         DateTime date =DateTime.Today;
 
         protected void Page_Load(object sender, EventArgs e)
